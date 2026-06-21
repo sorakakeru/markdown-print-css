@@ -1,10 +1,180 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Markdown Print CSS</title>
-    <link rel="stylesheet" href="./css/print.css" />
-  </head>
-  <body></body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Print CSS - sample</title>
+  <link rel="stylesheet" href="./css/print.css">
+</head>
+<body>
+
+<h1 id="-heading1"># Heading1</h1>
+<h2 id="-heading2">## Heading2</h2>
+<h3 id="-heading3">### Heading3</h3>
+<h4 id="-heading4">#### Heading4</h4>
+<h5 id="-heading5">##### Heading5</h5>
+<h6 id="-heading6">###### Heading6</h6>
+
+<hr>
+
+<h2 id="これは何">これは何</h2>
+<p>Markdown形式のファイルをHTMLファイルに変換してブラウザで表示したときに、印刷時にも読みやすくするためのCSSです。</p>
+
+<h2 id="表示サンプル">表示サンプル</h2>
+
+<h3 id="テキスト">テキスト</h3>
+<p>テキストです。ただのテキスト。<br>これは改行。</p>
+<p>これは段落改行。</p>
+
+<h3 id="太字">太字</h3>
+<p>太字のサンプル。<strong>この部分が太字</strong>です。</p>
+
+<h3 id="取り消し線">取り消し線</h3>
+<p>取消線のサンプル。<s>この部分が取り消し線</s>です。</p>
+
+<h3 id="テキストリンク">テキストリンク</h3>
+<p>テキストリンクのサンプル。このリポジトリは<a href="https://github.com/sorakakeru/markdown-print-css">こちら</a>。</p>
+
+<h3 id="リスト">リスト</h3>
+<ul>
+  <li>番号なしリスト</li>
+  <li>番号なしリスト</li>
+  <li>番号なしリスト</li>
+  <li>
+    番号なしリスト
+    <ul>
+      <li>インデント</li>
+      <li>インデント</li>
+      <li>インデント</li>
+    </ul>
+  </li>
+  <li>
+    番号なしリスト
+    <ul>
+      <li>
+        インデント
+        <ul>
+          <li>さらにインデント</li>
+          <li>さらにインデント</li>
+        </ul>
+      </li>
+      <li>
+        インデント
+        <ul>
+          <li>さらにインデント</li>
+          <li>さらにインデント</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<ol>
+  <li>番号ありリスト</li>
+  <li>番号ありリスト</li>
+  <li>番号ありリスト</li>
+  <li>
+    番号ありリスト
+    <ol>
+      <li>インデント</li>
+      <li>インデント</li>
+      <li>インデント</li>
+    </ol>
+  </li>
+  <li>
+    番号ありリスト
+    <ol>
+      <li>
+        インデント
+        <ol>
+          <li>さらにインデント</li>
+          <li>さらにインデント</li>
+        </ol>
+      </li>
+      <li>
+        インデント
+        <ol>
+          <li>さらにインデント</li>
+          <li>さらにインデント</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<h3 id="引用">引用</h3>
+<p>引用表示です。</p>
+<blockquote>
+  <p>これは引用です。<br>引用</p>
+</blockquote>
+
+<h3 id="画像表示">画像表示</h3>
+<p>画像。</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="フィンセント・ファン・ゴッホ『星月夜』"></p>
+<p>Wikimedia Commonsより引用 / パブリックドメイン<br><a href="https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg">https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg</a></p>
+
+<h3 id="水平線">水平線</h3>
+<p>水平線（罫線）</p>
+<hr>
+<p>区切り線ともいう。</p>
+
+<h3 id="インラインコード--コードブロック">インラインコード / コードブロック</h3>
+<p>インラインコード。このサンプルファイルは<code>.md</code>ファイルを<code>.html</code>ファイルに変換して作成しています。</p>
+
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>リスト<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>リスト<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>リスト<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+
+<p>コードブロックのシンタックスハイライトは用意していません。</p>
+
+<h3 id="表テーブル">表（テーブル）</h3>
+<p>表組</p>
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>項目A</td>
+      <td>項目Aの説明</td>
+    </tr>
+    <tr>
+      <td>項目B</td>
+      <td>項目Bの説明</td>
+    </tr>
+  </tbody>
+</table>
+<p>セル内文字寄せ</p>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">左寄せ</th>
+      <th style="text-align: center">中央寄せ</th>
+      <th style="text-align: right">右寄せ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">A</td>
+      <td style="text-align: center">B</td>
+      <td style="text-align: right">C</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">A</td>
+      <td style="text-align: center">B</td>
+      <td style="text-align: right">C</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<p>以上</p>
+  
+</body>
 </html>
