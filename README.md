@@ -1,0 +1,2 @@
+# markdown-print-css
+Markdown形式から変換したHTMLファイルを印刷時にいい感じに整形するためのCSS
