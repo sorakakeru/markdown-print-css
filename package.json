@@ -1,0 +1,18 @@
+{
+  "name": "markdown-print-css",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail \"pnpm:sass:watch\" \"vite\"",
+    "sass:watch": "sass --watch --no-source-map src/sass:src/css",
+    "sass:build": "sass --no-source-map src/sass:src/css",
+    "build": "pnpm run sass:build && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3",
+    "sass": "^1.101.0",
+    "vite": "^8.0.12"
+  }
+}
